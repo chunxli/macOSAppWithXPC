@@ -8,6 +8,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
+@property (weak) IBOutlet NSTextField *OutputL;
+@property (weak) IBOutlet NSTextField *InputT;
 
 
 @end

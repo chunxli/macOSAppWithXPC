@@ -14,6 +14,9 @@
 		1E14902325D27B3A004EE1C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E14902225D27B3A004EE1C2 /* main.m */; };
 		1E14902E25D27B3B004EE1C2 /* MacOSTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E14902D25D27B3B004EE1C2 /* MacOSTestAppTests.m */; };
 		1E14903925D27B3B004EE1C2 /* MacOSTestAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E14903825D27B3B004EE1C2 /* MacOSTestAppUITests.m */; };
+		1E14905225D27C25004EE1C2 /* TestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E14905125D27C25004EE1C2 /* TestService.m */; };
+		1E14905425D27C25004EE1C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E14905325D27C25004EE1C2 /* main.m */; };
+		1E14905825D27C25004EE1C2 /* TestService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 1E14904D25D27C25004EE1C2 /* TestService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,28 @@
 			remoteGlobalIDString = 1E14901225D27B39004EE1C2;
 			remoteInfo = MacOSTestApp;
 		};
+		1E14905625D27C25004EE1C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E14900B25D27B39004EE1C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E14904C25D27C25004EE1C2;
+			remoteInfo = TestService;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E14905C25D27C25004EE1C2 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				1E14905825D27C25004EE1C2 /* TestService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E14901325D27B39004EE1C2 /* MacOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +74,12 @@
 		1E14903425D27B3B004EE1C2 /* MacOSTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacOSTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E14903825D27B3B004EE1C2 /* MacOSTestAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacOSTestAppUITests.m; sourceTree = "<group>"; };
 		1E14903A25D27B3B004EE1C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E14904D25D27C25004EE1C2 /* TestService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = TestService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E14904F25D27C25004EE1C2 /* TestServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestServiceProtocol.h; sourceTree = "<group>"; };
+		1E14905025D27C25004EE1C2 /* TestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestService.h; sourceTree = "<group>"; };
+		1E14905125D27C25004EE1C2 /* TestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestService.m; sourceTree = "<group>"; };
+		1E14905325D27C25004EE1C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E14905525D27C25004EE1C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E14904A25D27C25004EE1C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +120,7 @@
 				1E14901525D27B39004EE1C2 /* MacOSTestApp */,
 				1E14902C25D27B3B004EE1C2 /* MacOSTestAppTests */,
 				1E14903725D27B3B004EE1C2 /* MacOSTestAppUITests */,
+				1E14904E25D27C25004EE1C2 /* TestService */,
 				1E14901425D27B39004EE1C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +131,7 @@
 				1E14901325D27B39004EE1C2 /* MacOSTestApp.app */,
 				1E14902925D27B3B004EE1C2 /* MacOSTestAppTests.xctest */,
 				1E14903425D27B3B004EE1C2 /* MacOSTestAppUITests.xctest */,
+				1E14904D25D27C25004EE1C2 /* TestService.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +170,18 @@
 			path = MacOSTestAppUITests;
 			sourceTree = "<group>";
 		};
+		1E14904E25D27C25004EE1C2 /* TestService */ = {
+			isa = PBXGroup;
+			children = (
+				1E14904F25D27C25004EE1C2 /* TestServiceProtocol.h */,
+				1E14905025D27C25004EE1C2 /* TestService.h */,
+				1E14905125D27C25004EE1C2 /* TestService.m */,
+				1E14905325D27C25004EE1C2 /* main.m */,
+				1E14905525D27C25004EE1C2 /* Info.plist */,
+			);
+			path = TestService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +192,12 @@
 				1E14900F25D27B39004EE1C2 /* Sources */,
 				1E14901025D27B39004EE1C2 /* Frameworks */,
 				1E14901125D27B39004EE1C2 /* Resources */,
+				1E14905C25D27C25004EE1C2 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1E14905725D27C25004EE1C2 /* PBXTargetDependency */,
 			);
 			name = MacOSTestApp;
 			productName = MacOSTestApp;
@@ -187,6 +240,23 @@
 			productReference = 1E14903425D27B3B004EE1C2 /* MacOSTestAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1E14904C25D27C25004EE1C2 /* TestService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E14905925D27C25004EE1C2 /* Build configuration list for PBXNativeTarget "TestService" */;
+			buildPhases = (
+				1E14904925D27C25004EE1C2 /* Sources */,
+				1E14904A25D27C25004EE1C2 /* Frameworks */,
+				1E14904B25D27C25004EE1C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestService;
+			productName = TestService;
+			productReference = 1E14904D25D27C25004EE1C2 /* TestService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +276,9 @@
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 1E14901225D27B39004EE1C2;
 					};
+					1E14904C25D27C25004EE1C2 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = 1E14900E25D27B39004EE1C2 /* Build configuration list for PBXProject "MacOSTestApp" */;
@@ -224,6 +297,7 @@
 				1E14901225D27B39004EE1C2 /* MacOSTestApp */,
 				1E14902825D27B3B004EE1C2 /* MacOSTestAppTests */,
 				1E14903325D27B3B004EE1C2 /* MacOSTestAppUITests */,
+				1E14904C25D27C25004EE1C2 /* TestService */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1E14903225D27B3B004EE1C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E14904B25D27C25004EE1C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +362,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E14904925D27C25004EE1C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E14905425D27C25004EE1C2 /* main.m in Sources */,
+				1E14905225D27C25004EE1C2 /* TestService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +383,11 @@
 			isa = PBXTargetDependency;
 			target = 1E14901225D27B39004EE1C2 /* MacOSTestApp */;
 			targetProxy = 1E14903525D27B3B004EE1C2 /* PBXContainerItemProxy */;
+		};
+		1E14905725D27C25004EE1C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E14904C25D27C25004EE1C2 /* TestService */;
+			targetProxy = 1E14905625D27C25004EE1C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -535,6 +630,34 @@
 			};
 			name = Release;
 		};
+		1E14905A25D27C25004EE1C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TestService/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcentercss.TestService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1E14905B25D27C25004EE1C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TestService/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcentercss.TestService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,6 +693,15 @@
 			buildConfigurations = (
 				1E14904425D27B3B004EE1C2 /* Debug */,
 				1E14904525D27B3B004EE1C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E14905925D27C25004EE1C2 /* Build configuration list for PBXNativeTarget "TestService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E14905A25D27C25004EE1C2 /* Debug */,
+				1E14905B25D27C25004EE1C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
