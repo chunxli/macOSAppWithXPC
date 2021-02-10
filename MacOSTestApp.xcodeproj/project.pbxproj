@@ -523,14 +523,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5F4776WD6T;
+				DEVELOPMENT_TEAM = UBF8T346G9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MacOSTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chunxiao.MacOSTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcentercss.MacOSTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -544,14 +544,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5F4776WD6T;
+				DEVELOPMENT_TEAM = UBF8T346G9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = MacOSTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chunxiao.MacOSTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcentercss.MacOSTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -641,7 +641,7 @@
 				DEVELOPMENT_TEAM = 5F4776WD6T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TestService/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chunxiao.TestService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcentercss.TestService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -657,7 +657,7 @@
 				DEVELOPMENT_TEAM = 5F4776WD6T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TestService/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chunxiao.TestService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcentercss.TestService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
